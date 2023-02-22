@@ -1,0 +1,50 @@
+@mixin flex-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-horizontal-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin primary-btn {
+  background: linear-gradient(
+    to right,
+    $color-primary-medium,
+    $color-primary-dark
+  );
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+}
+
+.display-hidden {
+  display: none;
+}
+
+flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-btn {
+  background: linear-gradient(
+    to right,
+    $color-primary-medium,
+    $color-primary-dark
+  );
+  color: $color-white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.small {
+    padding: 1rem 3rem;
+  }
+
+  &.medium {
+    padding: 1.4rem 4.8rem;
+  }
+}

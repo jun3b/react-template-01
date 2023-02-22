@@ -1,0 +1,47 @@
+@mixin header-contents-margin {
+  margin: 3rem 36rem 0 0;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../assets/header.jpg");
+  background-size: cover;
+  background-position: top;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__input-box {
+    width: auto;
+    @include flex-horizontal-center;
+    @include header-contents-margin;
+
+    &__input {
+      padding: 1rem 1.2rem;
+      border: none;
+    }
+  }
+}
+
+.heading-primary {
+  white-space: pre-line;
+
+  &__main {
+    color: $color-primary-medium;
+    font-size: 8.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  &__sub {
+    @include header-contents-margin;
+    color: $color-gray-medium;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,76 @@
+@mixin card-color($color) {
+  background-color: $color;
+}
+
+@mixin button-color($color) {
+  color: $color;
+  background-color: $color-white;
+  &:hover {
+    background-color: darken($color-white, 10%);
+  }
+}
+
+.about-card {
+  padding: 3rem;
+  background-color: $color-primary-medium;
+  color: $color-white;
+  line-height: 1.2;
+  text-align: left;
+
+  &__index {
+    font-size: 6rem;
+    font-weight: 900;
+  }
+
+  &__title {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  &__contents {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
+  &.orange {
+    @include card-color($color-primary-medium);
+  }
+  &.red {
+    @include card-color($color-primary-dark);
+  }
+  &.black {
+    @include card-color($color-gray-dark);
+  }
+  &.gray {
+    @include card-color($color-gray-medium);
+  }
+
+  &__btn {
+    @include flex-align-center;
+    margin-top: 2rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+
+    &.orange {
+      @include button-color($color-primary-medium);
+    }
+    &.red {
+      @include button-color($color-primary-dark);
+    }
+    &.black {
+      @include button-color($color-gray-dark);
+    }
+    &.gray {
+      @include button-color($color-gray-medium);
+    }
+    cursor: pointer;
+  }
+}
+
+.icon-arrow {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: $color-white;
+}

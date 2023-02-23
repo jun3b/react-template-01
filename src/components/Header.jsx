@@ -21,7 +21,7 @@ export default function Header() {
           <input
             name="email"
             type="email"
-            className="header__input-box__input"
+            className="header__input"
             placeholder="Enter a valid email address"
           />
           <button type="submit" className="primary-btn small">

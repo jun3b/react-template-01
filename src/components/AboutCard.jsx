@@ -9,12 +9,12 @@ export default function AboutCard({
   color = "",
 }) {
   return (
-    <div className={`about__card ${color}`}>
+    <div className={`about-card ${color}`}>
       <div className="flex-column">
-        <p className="about__card-index">{index}</p>
-        <p className="about__card-title">{title}</p>
-        <p className="about__card-contents">{contents}</p>
-        <div className={`about__btn ${color}`}>
+        <p className="about-card__index">{index}</p>
+        <p className="about-card__title">{title}</p>
+        <p className="about-card__contents">{contents}</p>
+        <div className={`about-card__btn ${color}`}>
           <MdKeyboardArrowRight className="icon-arrow" color="inherit" />
         </div>
       </div>

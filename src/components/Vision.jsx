@@ -4,23 +4,22 @@ export default function Vision() {
       <div className="vision__container">
         <div className="grid-1-3">
           <div className="vision__text-box flex-column">
-            <h1>
-              <p>our vision</p>
-              <p>Construction Services</p>
-              <p>
-                We have gained experience in most major market segments,
-                including:
-              </p>
-              <ul>
-                <li>Data Centres</li>
-                <li>Commercial Interiors</li>
-                <li>Financial Centres</li>
-                <li>Retail</li>
-                <li>Hospitality</li>
-                <li>Sports</li>
-                <li>Manufacturing</li>
-              </ul>
-            </h1>
+            <h1 className="display-hidden ">our vision</h1>
+            <p className="vision__label">our vision</p>
+            <p className="vision__main">Construction Services</p>
+            <p className="vision__sub">
+              We have gained experience in most major market segments,
+              including:
+            </p>
+            <ul className="vision__list">
+              <li>Data Centres</li>
+              <li>Commercial Interiors</li>
+              <li>Financial Centres</li>
+              <li>Retail</li>
+              <li>Hospitality</li>
+              <li>Sports</li>
+              <li>Manufacturing</li>
+            </ul>
           </div>
           <div>
             <img src="img/vision-1.jpg" alt="pic-1" className="vision__pic" />

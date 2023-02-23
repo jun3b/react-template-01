@@ -16,6 +16,21 @@
   align-items: center;
   background-color: $color-primary-medium;
 
+  //text
+  &__label {
+  }
+  &__main {
+  }
+  &__sub {
+  }
+  &__list {
+    li {
+    }
+    li::before {
+      content: "\2022 \0020";
+    }
+  }
+  // image
   &__container {
     max-width: 114rem;
   }

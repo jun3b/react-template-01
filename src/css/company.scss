@@ -1,0 +1,51 @@
+.company {
+  background-color: $color-gray-light;
+
+  padding: 8rem 6rem;
+
+  &__wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__shape {
+    float: left;
+    width: 20rem;
+    height: 20rem;
+    background-color: teal;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+  }
+
+  &__text-box {
+  }
+
+  &__p-main {
+    color: $color-primary-medium;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__p-sub {
+    margin-top: 2.1rem;
+    color: $color-gray-medium;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  &__btn {
+    margin-top: 2.1rem;
+  }
+}
+
+.bar {
+  width: 10rem;
+  height: 0.5rem;
+  background-color: $color-primary-medium;
+  transform: translateX(20rem);
+}

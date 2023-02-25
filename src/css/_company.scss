@@ -1,11 +1,17 @@
 .company {
   background-color: $color-gray-light;
 
-  padding: 8rem 6rem;
+  padding: 8rem 0;
+  margin: 0 auto;
 
   &__wrap {
-    width: 70%;
     margin: 0 auto;
+
+    width: 70%;
+    @media screen and (max-width: 25em) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__shape {
@@ -18,9 +24,6 @@
     clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem);
-  }
-
-  &__text-box {
   }
 
   &__p-main {

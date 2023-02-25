@@ -1,7 +1,3 @@
-@mixin header-contents-margin {
-  margin: 3rem 36rem 0 0;
-}
-
 .header {
   height: 100vh;
   background-image: url("../assets/header.jpg");
@@ -12,13 +8,22 @@
     position: absolute;
     top: 50%;
     left: 40%;
+
     transform: translate(-50%, -50%);
+
+    @include respond(tablet) {
+      left: 50%;
+    }
+
+    @include respond(phone) {
+      // left: 60%;
+    }
   }
 
   &__input-box {
+    margin-top: 3rem;
     width: auto;
     @include flex-horizontal-center;
-    @include header-contents-margin;
   }
 
   &__input {
@@ -28,9 +33,8 @@
 }
 
 .heading-primary {
-  white-space: pre-line;
-
   &__main {
+    margin-top: 2rem;
     color: $color-primary-medium;
     font-size: 8.8rem;
     font-weight: 800;
@@ -38,10 +42,11 @@
   }
 
   &__sub {
-    @include header-contents-margin;
+    margin-top: 2rem;
     color: $color-gray-medium;
     font-size: 1.6rem;
     font-weight: 600;
     font-style: italic;
+    line-height: 1.6;
   }
 }

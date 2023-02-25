@@ -1,0 +1,83 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+
+  background-image: radial-gradient(
+      rgba($color-gray-medium, 0.5),
+      rgba($color-gray-dark, 0.5)
+    ),
+    url("../assets/contact-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @include respond(tablet) {
+    height: 100vh;
+  }
+
+  &__text-box {
+    margin: 3rem;
+    padding: 3rem;
+    background-color: rgba($color-white, 0.8);
+    text-align: center;
+  }
+
+  &__info-box {
+    @include respond(tablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__info {
+    padding: 3rem;
+    text-align: left;
+    white-space: pre-line;
+
+    &__text {
+      margin-top: 1rem;
+      color: #111;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.6;
+
+      @include respond(tablet) {
+        text-align: center;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem;
+  }
+  &__input {
+    padding: 1rem 1.2rem;
+    border: 1px solid $color-gray-medium;
+  }
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: $color-primary-medium;
+  border-radius: 50%;
+
+  &.start {
+    margin-top: 0;
+  }
+
+  @include respond(tablet) {
+    margin: 2rem auto;
+  }
+}
+
+.contact-icon {
+  width: 60%;
+  height: 60%;
+  color: $color-white;
+}

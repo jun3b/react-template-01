@@ -1,15 +1,18 @@
 // common
+@import "./common/responsive";
 @import "./common/reset";
 @import "./common/palette";
 @import "./common/common";
 @import "./common/animations";
 @import "./common/utils";
 
-// todo: _붙여서 나중에 compile
-@import "./header.scss";
-@import "./about.scss";
-@import "./aboutCard.scss";
-@import "./vision.scss";
-@import "./project.scss";
-@import "./projectCard.scss";
-@import "./company.scss";
+// components
+@import "./header";
+@import "./about";
+@import "./aboutCard";
+@import "./vision";
+@import "./project";
+@import "./projectCard";
+@import "./company";
+@import "./contact";
+@import "./menu";

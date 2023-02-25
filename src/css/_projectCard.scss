@@ -5,6 +5,11 @@
   color: $color-gray-medium;
   font-weight: 400;
 
+  @include respond(tablet) {
+  }
+  @include respond(tablet) {
+  }
+
   &__image {
     display: flex;
     justify-content: center;

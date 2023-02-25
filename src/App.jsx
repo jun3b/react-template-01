@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./components/About";
 import Company from "./components/Company";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Project from "./components/Project";
 import Vision from "./components/Vision";
@@ -14,6 +15,7 @@ export default function App() {
       <Vision />
       <Company />
       <Project />
+      <Contact />
     </>
   );
 }

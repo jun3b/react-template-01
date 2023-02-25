@@ -1,0 +1,35 @@
+/* 
+0 - 600px: phone
+600 - 900px: tablet
+900 - more: desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (max-width: 18.75em) {
+      // viewport < 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media screen and (max-width: 37.5em) {
+      // viewport < 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media screen and (max-width: 56.25em) {
+      // viewport < 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media screen and (max-width: 75em) {
+      // viewport < 1200px
+      @content;
+    }
+  }
+}

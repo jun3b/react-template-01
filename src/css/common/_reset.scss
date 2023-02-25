@@ -1,68 +1,31 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 10px;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+  box-sizing: border-box;
+  font-family: Pretendard !important;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5
+
+  @include respond(desktop) {
+    font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5
+  }
+
+  @include respond(tablet) {
+    font-size: 50%; // 1rem = 8px, 8px / 16px = 50
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%; // 1rem = 6px, 6px / 16px = 37.5
+  }
+
+  @include respond(small) {
+    font-size: 37.5%; // 1rem = 6px, 6px / 16px = 37.5
+  }
 }
 
 footer,

@@ -1,0 +1,30 @@
+.project {
+  height: auto;
+  &__image {
+    height: 50vh;
+    background-image: url("../assets/project.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__card-box {
+    @include contents-max;
+    height: 31rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    padding: 4rem;
+    gap: 2rem;
+    transform: translateY(-50%);
+
+    @include respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      height: 50rem;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+      height: 55em;
+      transform: translateY(-70%);
+    }
+  }
+}

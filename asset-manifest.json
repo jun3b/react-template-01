@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/react-template-01/static/css/main.d2cdde09.css",
-    "main.js": "/react-template-01/static/js/main.db438935.js",
+    "main.js": "/react-template-01/static/js/main.a0dc2e16.js",
+    "static/media/red-roof.jpg": "/react-template-01/static/media/red-roof.bab2860701a1db34d723.jpg",
     "static/media/header.jpg": "/react-template-01/static/media/header.f15761b8737c8b1d8b39.jpg",
     "static/media/project.jpg": "/react-template-01/static/media/project.5d14fbcd5952b20540d8.jpg",
     "static/media/contact-bg.jpg": "/react-template-01/static/media/contact-bg.9a249f683e8825264302.jpg",
+    "static/media/vision-1.jpg": "/react-template-01/static/media/vision-1.b12714fef236660ac3bf.jpg",
+    "static/media/vision-3.jpg": "/react-template-01/static/media/vision-3.187f4ad55bb47b2014ee.jpg",
+    "static/media/vision-2.jpg": "/react-template-01/static/media/vision-2.b46e5f3ff59de992d74a.jpg",
     "index.html": "/react-template-01/index.html",
     "main.d2cdde09.css.map": "/react-template-01/static/css/main.d2cdde09.css.map",
-    "main.db438935.js.map": "/react-template-01/static/js/main.db438935.js.map"
+    "main.a0dc2e16.js.map": "/react-template-01/static/js/main.a0dc2e16.js.map"
   },
   "entrypoints": [
     "static/css/main.d2cdde09.css",
-    "static/js/main.db438935.js"
+    "static/js/main.a0dc2e16.js"
   ]
 }

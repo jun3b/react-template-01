@@ -1,9 +1,11 @@
+import RedRoof from "../assets/red-roof.jpg";
+
 export default function Company() {
   return (
     <section className="company">
       <h1 className="display-hidden ">about company</h1>
       <div className="company__wrap">
-        <img src="img/red-roof.jpg" alt="pic" className="company__shape" />
+        <img src={RedRoof} alt="pic" className="company__shape" />
         <div className="company__text-box">
           <div className="bar" />
           <p className="company__p-main">About Our Company</p>

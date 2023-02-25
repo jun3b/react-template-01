@@ -1,3 +1,7 @@
+import Vision1 from "../assets/vision-1.jpg";
+import Vision2 from "../assets/vision-2.jpg";
+import Vision3 from "../assets/vision-3.jpg";
+
 export default function Vision() {
   return (
     <section className="vision">
@@ -20,19 +24,11 @@ export default function Vision() {
           </ul>
         </div>
         <div className="vision__image">
-          <img src="img/vision-1.jpg" alt="pic-1" className="vision__pic" />
+          <img src={Vision1} alt="pic-1" className="vision__pic" />
         </div>
         <div className="vision__image">
-          <img
-            src="img/vision-2.jpg"
-            alt="pic-2"
-            className="vision__pic-half"
-          />
-          <img
-            src="img/vision-3.jpg"
-            alt="pic-3"
-            className="vision__pic-half"
-          />
+          <img src={Vision2} alt="pic-2" className="vision__pic-half" />
+          <img src={Vision3} alt="pic-3" className="vision__pic-half" />
         </div>
       </div>
     </section>
